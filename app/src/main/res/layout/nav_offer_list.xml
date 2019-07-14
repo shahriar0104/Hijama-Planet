@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"
+    android:background="@color/light_black">
+
+    <ImageView
+        android:id="@+id/imageShow"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:transitionName="@string/imageTransition"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/noticeHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/app_name"
+                android:fontFamily="@font/lato_bold"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+
+        <!--  <com.ms.square.android.expandabletextview.ExpandableTextView
+              android:id="@+id/expand_text_view"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              expandableTextView:animAlphaStart="1"
+              expandableTextView:maxCollapsedLines="1">
+
+              <TextView
+                  android:id="@id/expandable_text"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_marginTop="10dp"
+                  android:fontFamily="sans-serif"
+                  android:textSize="15sp" />
+
+              <ImageButton
+                  android:id="@id/expand_collapse"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="end|bottom"
+                  android:paddingRight="5dp"
+                  android:paddingBottom="5dp"
+                  android:background="@android:color/transparent" />
+
+          </com.ms.square.android.expandabletextview.ExpandableTextView> -->
+
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/lato_regular"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black"/>
+
+        <TextView
+            android:id="@+id/noticeDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="test"
+            android:fontFamily="@font/lato_regular"
+            android:textAlignment="textEnd"
+            android:textColor="@color/blue"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

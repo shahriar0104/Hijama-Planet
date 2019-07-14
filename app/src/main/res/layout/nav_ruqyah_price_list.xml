@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <!--<LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="#6c5a99">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:textSize="16sp"
+            android:text="১। কনসাল্টেশান ফি ৫০০ টাকা\n২। রুকইয়াহ সেশন (প্রতি ঘন্টা/প্রতি জন) ২০০০ টাকা\n৩। একই পরিবারের একাধিক জনের এক সাথে রুকইয়াহ (প্রতি ঘন্টা, প্রতি জন) ১৫০০ টাকা।\n৪। মাসিক প্যাকেজ (মোট ২০ ঘন্টার, ম্যাস রুকইয়াহ টাইপ) ১০,০০০ টাকা\n৫। ম্যাস রুকইয়াহ (সপ্তাহের নির্দিষ্ট দিনে, প্রতি ঘন্টা, প্রতি জন) ৫০০ টাকা\n৬। হোম সার্ভিস (প্রতি দিন, সর্বোচ্চ ৫ ঘন্টা) ১০,০০০ টাকা" />
+
+    </LinearLayout> -->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+</LinearLayout>

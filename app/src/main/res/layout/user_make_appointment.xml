@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_user"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:text="Make an Appointment"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/namePatient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/trans_rounded"
+            android:drawableLeft="@drawable/ic_user_smallicon"
+            android:drawablePadding="10dp"
+            android:focusable="false"
+            android:fontFamily="@font/lato_regular"
+            android:hint="patient Name"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/mobilePatient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/trans_rounded"
+            android:drawableLeft="@drawable/mobile_small"
+            android:drawablePadding="10dp"
+            android:focusable="false"
+            android:fontFamily="@font/lato_regular"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/agePatient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/trans_rounded"
+            android:drawableLeft="@drawable/age_small"
+            android:drawablePadding="10dp"
+            android:focusable="false"
+            android:fontFamily="@font/lato_regular"
+            android:hint="Age"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/trans_rounded"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/gender"/>
+
+            <Spinner
+                android:id="@+id/genderSn"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/trans_rounded"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_cure"/>
+
+            <Spinner
+                android:id="@+id/treatMethodSn"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/trans_rounded"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/branch_icon"/>
+
+            <Spinner
+                android:id="@+id/branchNameTv"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dateSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/trans_rounded"
+                android:drawableLeft="@drawable/calendar_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:padding="8dp"
+                android:hint="Tap to Select Date"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!--  <View
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"
+              android:background="@color/grayblack"
+              android:layout_marginLeft="5dp"
+              android:layout_marginRight="5dp"/> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/timeSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/trans_rounded"
+                android:drawableLeft="@drawable/time_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:padding="8dp"
+                android:hint="Tap to Select Time"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/problemPatient"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:gravity="left"
+            android:background="@drawable/trans_rounded"
+            android:drawableLeft="@drawable/problem"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/lato_regular"
+            android:hint="Offer code if you have any"
+            android:inputType="textMultiLine"
+            android:maxLength="75"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/view_transparent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancelAppointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/firebrick"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/view_transparent" />
+
+                <Button
+                    android:id="@+id/date_time_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="Make Appointment"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

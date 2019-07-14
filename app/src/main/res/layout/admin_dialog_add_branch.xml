@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded_dialog"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Add Branch"
+        android:textColor="@color/black_effective"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/newBranchLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/editbox2"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:hint="Branch Location"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/newBranchName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/editbox2"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:hint="Company Title"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/newBranchLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/editbox2"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:hint="Branch Latitude"
+        android:inputType="phone"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/newBranchLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/editbox2"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:hint="Branch Longitude"
+        android:inputType="phone"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/newBranchAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/editbox2"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:hint="Address"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/newBranchPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/editbox2"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/lato_regular"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/firebrick"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/confirmButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/lato_regular"
+                android:text="Confirm"
+                android:textAllCaps="false"
+                android:textColor="@color/indigo"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

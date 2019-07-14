@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_pic"
+            android:title="হোম " />
+        <item
+            android:id="@+id/nav_hijama"
+            android:icon="@drawable/ic_med_sys"
+            android:title="হিজামা" />
+
+        <item
+            android:id="@+id/nav_ruqyahshariah"
+            android:icon="@drawable/ic_mrs"
+            android:title="রুকইয়াহ শারইয়্যাহ" />
+        <item
+            android:id="@+id/nav_masnun"
+            android:icon="@drawable/ic_amal_control"
+            android:title="মাসনুন আমল" />
+        <item
+            android:id="@+id/nav_ashfia"
+            android:icon="@drawable/ic_cure"
+            android:title="রুকইয়াহ ডিটক্স" />
+        <item
+            android:id="@+id/nav_dua"
+            android:icon="@drawable/ic_dua"
+            android:title="দোয়া" />
+        <item
+            android:id="@+id/nav_ruqyahTest"
+            android:icon="@drawable/ic_ques_ans"
+            android:title="সমস্যা যাচাই" />
+        <item
+            android:id="@+id/nav_price"
+            android:icon="@drawable/ic_money"
+            android:title="হিজামা/রুকইয়াহ থেরাপীর খরচ" />
+        <item
+            android:id="@+id/nav_offer"
+            android:icon="@drawable/ic_notice"
+            android:title="বিজ্ঞপ্তি/অফার" />
+        <item
+            android:id="@+id/nav_shop"
+            android:icon="@drawable/ic_shop"
+            android:title="শপ" />
+        <item
+            android:id="@+id/nav_review"
+            android:icon="@drawable/ic_review"
+            android:title="মন্তব্য" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map"
+            android:title="হিজামা প্ল্যানেটের শাখাসমূহ" />
+        <item
+            android:id="@+id/nav_like"
+            android:icon="@drawable/ic_like"
+            android:title="যোগাযোগ" />
+
+    </group>
+
+    <item android:title="বিস্তারিত">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="অ্যাপ সম্পর্কিত" />
+        </menu>
+    </item>
+
+</menu>

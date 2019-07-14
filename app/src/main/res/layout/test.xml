@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linLayout"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/branchTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="branch"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/treatmentMethodTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="treatment"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray" />
+
+                <LinearLayout
+                    android:paddingTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dateOfReq"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="date"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textSize="13sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/timeOfReq"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="time"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textSize="13sp"
+                        android:gravity="center"/>
+
+                    <Button
+                        android:id="@+id/cancelButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:text="Cancel"
+                        android:textSize="16sp"
+                        android:textColor="#ac3b3b"
+                        android:background="@android:color/transparent"
+                        android:textAllCaps="false"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

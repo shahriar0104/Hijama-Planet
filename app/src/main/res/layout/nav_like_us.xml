@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:background="@drawable/background">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!--<ImageView
+                android:id="@+id/facebookPage"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:src="@drawable/fb_page"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/facebookGroup"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/fb_group"
+                android:clickable="true"/>-->
+
+            <LinearLayout
+                android:id="@+id/fbPageLayout"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/like_button">
+
+                <ImageView
+                    android:layout_width="256dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/fb_logo"
+                    android:layout_weight="2"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/fbPage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Facebook"
+                        android:fontFamily="@font/lato_bold"
+                        android:textColor="#4593ce"
+                        android:gravity="bottom|center"
+                        android:textSize="24sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/page"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center"
+                        android:text="Page"
+                        android:fontFamily="@font/lato_regular"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="#4593ce"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fbGroupLayout"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/like_button">
+
+                <ImageView
+                    android:layout_width="256dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/fb_logo"
+                    android:layout_weight="2"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/fbGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Facebook"
+                        android:fontFamily="@font/lato_bold"
+                        android:textColor="#4593ce"
+                        android:gravity="bottom|center"
+                        android:textSize="24sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center"
+                        android:text="Group"
+                        android:fontFamily="@font/lato_regular"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="#4593ce"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fbRuqyahSupport"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/like_button">
+
+                <ImageView
+                    android:layout_width="256dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/fb_logo"
+                    android:layout_weight="2"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ruqyah Support"
+                        android:fontFamily="@font/lato_bold"
+                        android:textColor="#4593ce"
+                        android:gravity="bottom|center"
+                        android:textSize="24sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center"
+                        android:text="Bangladesh"
+                        android:fontFamily="@font/lato_regular"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="#4593ce"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fbRuqyahShariahPage"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/like_button">
+
+                <ImageView
+                    android:layout_width="256dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/fb_logo"
+                    android:layout_weight="2"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ruqyah Shariyah"
+                        android:fontFamily="@font/lato_bold"
+                        android:textColor="#4593ce"
+                        android:gravity="bottom|center"
+                        android:textSize="24sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center"
+                        android:text="Page"
+                        android:fontFamily="@font/lato_regular"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="#4593ce"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/websiteVisit"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/like_button">
+
+                <ImageView
+                    android:layout_width="256dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_weight="2"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/visitUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Visit Us on our"
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="#4593ce"
+                        android:gravity="bottom"
+                        android:textSize="16sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/web"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hijama Website"
+                        android:fontFamily="@font/lato_bold"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:textColor="#4593ce"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ruqyahVisit"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/like_button">
+
+                <ImageView
+                    android:layout_width="256dp"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_weight="2"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/visitRuqyah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Visit Us on our"
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="#4593ce"
+                        android:gravity="bottom"
+                        android:textSize="16sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/ruqyahWeb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ruqyah Website"
+                        android:fontFamily="@font/lato_bold"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:textColor="#4593ce"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- <ImageView
+                 android:layout_marginTop="10dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="64dp"
+                 android:src="@drawable/facebook_like"/> -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

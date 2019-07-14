@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/hijamaScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <Button
+                android:id="@+id/hijamaKi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradient_hijama"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:textColor="@color/white"
+                android:text="হিজামা কি ও কিভাবে করা হয়?"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/hijamaHistory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradient_hijama"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:textColor="@color/white"
+                android:text="হিজামার ইতিহাস"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+            <!--<Button
+                android:id="@+id/hijamaTypes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradient_hijama"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:textColor="@color/white"
+                android:text="হিজামার কিভাবে করতে হবে?"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/hijamaBenefits"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/editbox2_preset"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:text="হিজামার উপকারিতা"
+                android:textAllCaps="false"
+                android:textSize="16dp" />-->
+
+            <Button
+                android:id="@+id/hijamaInstrument"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradient_hijama"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:textColor="@color/white"
+                android:text="হিজামা করতে কি কি যন্ত্রপাতি লাগে আর সেগুলো কোথায় পাওয়া যায়?"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+
+            <Button
+                android:id="@+id/hijamaDesease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradient_hijama"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:textColor="@color/white"
+                android:text="হিজামা (Cupping) এর মাধ্যমে যে সব রোগের উপকার হয়"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/hijamaInsDisposal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradient_hijama"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:textColor="@color/white"
+                android:text="হিজামার কাপ ও যন্ত্রপাতি কেন ডিসপোজেবল হওয়া উচিৎ"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/hijamaAnatomy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradient_hijama"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:textColor="@color/white"
+                android:text="এ্যানাটমি অফ হিজামা কাটস"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/hijamaEveryBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradient_hijama"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:textColor="@color/white"
+                android:text="সবাই কি হিজামা করতে পারবে? কার কাছে হিজামা করাবেন?"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/hijamaDoctorCapability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradient_hijama"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:textColor="@color/white"
+                android:text="সবাই কি হিজামা করতে পারবে? কার কাছে হিজামা করাবেন?"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/hijamaTheory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradient_hijama"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:textColor="@color/white"
+                android:text="হিজামার বৈজ্ঞানিক ভিত্তি"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/hijamaHadis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradient_hijama"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:textColor="@color/white"
+                android:text="হিজামা সংক্রান্ত হাদীসসমূহ ও মাসায়েল"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/hijamaMoon"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradient_hijama"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:textColor="@color/white"
+                android:text="চাঁদের সাথে হিজামার সম্পর্ক"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/hijamaOrganSolution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradient_hijama"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:textColor="@color/white"
+                android:text="বিভিন্ন রোগে ও বিভিন্ন অর্গ্যান এর বিভিন্ন সমস্যায় হিজামা কিভাবে কাজ করে?"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+            <!--<Button
+                android:id="@+id/hijamaSector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/editbox2_preset"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:text="কোন কোন ক্ষেত্রে হিজামা করা যায় না আর কোন কোন ক্ষেত্রে সাবধানতা অবলম্বন করতে হয়?"
+                android:textAllCaps="false"
+                android:textSize="16dp" />-->
+
+            <Button
+                android:id="@+id/hijamaBefAfter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradient_hijama"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:textColor="@color/white"
+                android:text="হিজামার আগে ও পরে যে সকল বিষয়গুলো জানা জরুরী"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+            <!--<Button
+                android:id="@+id/hijamaFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/editbox2_preset"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:text="যে সকল খাবার হিজামার ফলাফলকে ত্বরান্বিত করে"
+                android:textAllCaps="false"
+                android:textSize="16dp" />-->
+
+            <Button
+                android:id="@+id/hijamaTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradient_hijama"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:textColor="@color/white"
+                android:text="হিজামার জন্য উত্তম সময় এবং কতদিন পরপর হিজামা করা যায়?"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+            <!--<Button
+                android:id="@+id/hijamaWhen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/editbox2_preset"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:text="হিজামা কখন করা উচিৎ আর কখন করা উচিৎ নয়"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/hijamaHealthPrb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/editbox2_preset"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:text="যে সকল শারিরীক সমস্যায় হিজামা করার ক্ষেত্রে সাবধানতা অবলম্বন করা উচিৎ।"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/hijamaPopularPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/editbox2_preset"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:text="জনপ্রিয় বিভিন্ন ব্যাক্তিদের হিজামা/ কাপিং"
+                android:textAllCaps="false"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/hijamaBranch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/editbox2_preset"
+                android:drawableRight="@drawable/ic_arrow_right"
+                android:text="আমাদের দেশের বিভিন্ন হিজামা সেন্টার সমূহ"
+                android:textAllCaps="false"
+                android:textSize="16dp" />-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

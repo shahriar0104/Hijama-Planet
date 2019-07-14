@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StepProgressBar">
+        <attr name="inactiveDotColor" format="color" />
+        <attr name="activeDotColor" format="color"/>
+        <attr name="inactiveDotIcon" format="reference"/>
+        <attr name="activeDotIcon" format="reference"/>
+        <attr name="dotSize" format="dimension"/>
+        <attr name="spacing" format="dimension"/>
+        <attr name="activeDotIndex" format="integer"/>
+        <attr name="cumulativeDots" format="boolean"/>
+        <attr name="numberDots" format="integer"/>
+
+        <attr name="icon_color" format="color" />
+        <attr name="secondary_bg_color" format="color" />
+        <attr name="theme_icon" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ExpandableLayout">
+        <attr name="canExpand" format="boolean" />
+        <attr name="startExpanded" format="boolean" />
+    </declare-styleable>
+</resources>

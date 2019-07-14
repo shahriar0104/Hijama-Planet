@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1a1b1b</color>
+    <color name="colorPrimaryDark">#0f171b</color>
+    <color name="colorAccent">#aa007f</color>
+    <color name="colorAccentSecondary">#ff4081</color>
+
+    <color name="login">#352028</color>
+    <color name="lightgray">#ededed</color>
+    <color name="blue">#90CAF9</color>
+    <color name="white">#ffffff</color>
+    <color name="grayblack">#316b8c</color>
+    <color name="indigo">#5151b1</color>
+    <color name="pink">#fe104d</color>
+    <color name="black">#302a2a</color>
+    <color name="darkBlack">#000000</color>
+    <color name="snackbar">#5b3636</color>
+    <color name="app_button_blue">#00796B</color>
+    <color name="light_grey_semi_transparent">#80313435</color>
+    <color name="teal_accent">#4CAF50</color>
+    <color name="sea_green">#228B22</color>
+    <color name="green_yellow">#ADFF2F</color>
+    <color name="salmon">#FA8072</color>
+    <color name="firebrick">#B22222</color>
+    <color name="transparent">#80000000</color>
+    <color name="light_black">#4c4c4c</color>
+    <color name="map">#2797d7</color>
+    <color name="login_button">#352028</color>
+    <color name="view_transparent">#33FFFFFF</color>
+    <color name="pro_back">#aa007f</color>
+    <color name="black_effective">#2a2a2a</color>
+</resources>
